@@ -1,0 +1,3994 @@
+
+/* __________________________1->  Elemnt-styling __________________________
+
+some rules to whrite css very stylish*/ 
+
+/* __________________________2->  Background - Color, Image, Repeat __________________________
+.mydiv{
+    
+    background-color:rgb(255, 0, 0); red, green, blue  
+    background-color:rgb(255 0 0 / 50%);/* rgb alpha channel 
+    background-color:#00FF00;/* color hex code */
+
+    /* background-image: url("../IMG/flower.jpg"); */
+    /* background-repeat: repeat; 
+}
+    */
+
+
+/* __________________________3->  Background - Attachment, Position, Size __________________________*/
+
+/*
+
+.mydiv{
+
+    height: 1000px;
+    width:1000px ;
+    background-image:url("https://picsum.photos/200/300");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 'scroll default setup' */
+    /*background-position: 20px 30px;'-left -top'
+    background-position: 50% 20%;'-left -top' 
+    background-size: cover;'the img fill all the element'
+    background-size: contain'the img is fully visible';
+    background-size: 100% 100%
+}
+*/
+
+/* __________________________4->  Padding  __________________________*/
+
+/* .mydiv{
+    background-color: #DDD;
+
+    /* top right bottom left */
+    /* 10px 10px 10px  10px  */
+    /*padding: 10px; */
+
+    /* top right bottom left */
+    /* 10px 20px 10px  20px  */
+    /* padding: 10px 20px; */
+
+    /* top right bottom left */
+    /* 10px 20px 10px  20px  */
+    /* padding: 10px 20px 15px ; */
+
+    /* padding-bottom: 10px;
+}
+     */
+
+
+/* __________________________5->  Margin  __________________________*/
+
+/* .mydiv{
+
+    background-color: #DDD;
+    /* top right bottom left */
+    /* 10px 20px 10px  20px  
+       the same thing like padding in directions
+    */
+    /* 
+    width:70%;
+    margin-left:15%;-->'it takes right auto'
+    */
+
+    /* 
+    width: 70%;
+    margin: auto;-->'adjust the element in the middle' 
+    */
+    /* 
+    width: 70%;
+    margin-top: -10%;'disapear'
+}
+    */
+ 
+/* __________________________6->  Border  __________________________*/
+
+/* .mydiv{
+
+    background-color: #DDD;
+    width: 70%;
+    margin: auto;
+
+    /* border-width: 10px;
+    border-color: aquamarine red black yellow;
+    border-style: solid; */
+
+/*  border: 10px solid salmon;<--- all setup
+}
+ */    
+
+ /* __________________________7->  Outline  __________________________*/
+/* .mydiv{
+
+    background-color: #ddd;
+    width: 300px;
+    padding: 10px;
+    border: 10px solid salmon;
+    outline: 10px solid slategray  ;
+
+} */
+/* __________________________8->  Display - Block, Inline Block, Inline  __________________________*/
+
+/* 
+
+block
+
+-Take full width if no width
+-Add line break
+-respect padding, margin, height, width.
+
+inline
+
+-do not respect height, width. 
+-do not add line break
+-repect padding and margin [just left and right]
+-allow elements before and after it
+
+inline-block
+
+-allow elements before and after it
+-respect padding, margin, height, width.
+
+*/
+/* span {
+    background-color: #ddd;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+   
+} */
+
+/* __________________________9->  Element Visibility And Use Cases  __________________________*/
+
+/* div {
+    background-color: sandybrown;
+    margin: 10px 0;
+}
+/* .first{
+    display: none;'it's place taken'
+} */
+/* .first {
+    visibility: hidden;'the element stay hidden with it's place '
+} */ 
+
+/* __________________________10->  Grouping Multiple Selectors  __________________________*/
+
+/* .one {
+    border-bottom: 5px solid salmon;
+    color: salmon;
+
+}
+.two {
+    border-bottom: 5px solid rgb(54, 153, 12);
+    color: green;
+
+}
+.three {
+    border-bottom: 5px solid rgb(121, 114, 250);
+    color: blue;
+
+}
+.four {
+    border-bottom: 5px solid rgb(230, 250, 114);
+    color:yellowgreen ;
+}
+.one,
+.two,
+.three,
+.four {
+    padding: 15px;
+    margin: 10px;
+    background-color: #ddd;
+} */
+
+/* 
+Exercise: make the shape __________________________________________
+
+.one{
+    
+    border-left: 5px solid rgb(255, 31, 103) ;
+
+}
+.two{
+    border-left: 5px solid rgb(0, 150, 135) ;
+
+}
+.three{
+    border-left: 5px solid black ;
+
+}
+.one,
+.two,
+.three {
+    background-color: #ddd;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:10px ;
+    margin-top: 20px;
+    outline: 10px solid #ddd;
+} 
+*/
+/* __________________________11->  Nesting   __________________________*/
+
+/* 
+div .special {
+
+    color: salmon;
+} 
+*/
+
+/* __________________________12->  Dimensions - Width And Height   __________________________*/
+
+/* div {
+
+    background-color: salmon;
+    padding: 10px;
+    display: inline-block;
+
+
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 100px;
+    min-height: 20px; ; 
+    width: fit-content; <--'best solution'
+}
+ 
+ /* __________________________13-> Overflow - Overflow-X And Overflow-Y  __________________________*/
+
+/* div {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 10%;
+     
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* __________________________14-> Text - Color And Shadow  __________________________*/
+
+/* 
+ Text color:
+   -background color
+   -color
+ Text shadow:
+   syntax => text-shadow: H-shadow V-shadow blur color
+
+div {
+    color:rebeccapurple;
+    text-shadow: 0 0 10px red;
+}
+
+/* __________________________15-> Text - Alignment  __________________________*/
+/* 
+ Text Alignment:
+   -Alignment
+   -Direction
+   -Vertical Alignment
+  
+div {
+    background-color: #ddd;
+    text-align: center;
+    direction: ltr;
+    direction: rtl; when writing in arabic
+    vertical-align: middle;
+}
+/* __________________________16-> Text - Decoration And Transform  __________________________*/
+
+/* 
+p {
+    text-decoration:underline ;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+} */
+/* __________________________17-> Text - Spacing  __________________________*/
+/* 
+Text spacing:
+
+  -letter spacing
+  -text indent
+  -line height
+  -word spacing + wraping + white space
+
+/* p {
+     
+    letter-spacing: 2px;
+    text-indent: 100px; 'space in biggening of line' 
+    line-height: 1.6;
+    word-spacing: 3px;
+    white-space: nowrap; <--' overflow to the line side ,not to the bottom '
+} */
+/* div {
+    width: 300px;
+    background-color: #ddd;
+    word-break: break-all; <--'to keep the link visible and avoid overflow'
+} */
+
+/* __________________________18-> Text - Overflow And Use Cases  __________________________*/
+
+/* div {
+    width: 300px;
+    padding: 10px;
+    background-color: #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; <--'when title: not obliged to write enought'-link or title
+}
+div:hover {
+    overflow: visible;
+} */
+
+/* __________________________19->  Inheritance  __________________________*/
+
+/* body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+div {
+    " font-family is inherited from body "
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid salmon;
+}
+
+div p {
+
+    border: inherit; <== very useful 'inherited from father'
+    padding: inherit;
+} */
+/* __________________________20->  Typography - Font Family  __________________________*/
+
+/* about Fonts
+ */
+
+/* __________________________21->  Typography - Font Size And CSS Units  __________________________*/
+ /* 
+   CSS Units  "default font size is 16px"
+     - px
+     - em => Time
+     - rem => Root Time
+     - vw => view port width 'useful in resposive case'
+     - percentage => from the father
+   Read
+     - vmin
+     - vh
+ 
+ div {
+     font-size: 5vw;
+ }
+ */
+/* __________________________22->  Typography - Font Style And Variant And Weight  __________________________*/
+/* div {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold; or normal
+} */
+
+ /* __________________________23->  Mouse Cursor  _____________________________*/
+
+ /* div {
+    cursor: pointer;'and others depending on the use case'
+} */
+
+/* Exercise ______________________________________________________________________________ */
+
+/* 1_____________ grouping
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title  {
+
+    color:blue ;
+}
+div p,
+.title {         <-adding
+    color: green;
+}
+
+/* .title {
+    color: green;
+} */ 
+
+/* 2_____________     width: fit-content;
+
+
+div {
+    background-color: rgb(162, 18, 18);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px ;
+    width: fit-content;
+    overflow: scroll;
+} 
+
+2_____________ mulitple shadow 
+div {
+
+    background-color:#ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 orange,2px 2px 0 rgb(76, 120, 170),3px 3px 0 rebeccapurple ;
+      
+}
+
+3_____________ text-transform
+p {
+    text-align: center;
+    }
+.one {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.two {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.three {
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+4_____________ ellipsis
+
+div {
+    background-color: #ddd;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+5_____________ Make button with <a> tag
+
+
+div {
+    background-color: rgb(33, 151, 100);
+    text-align: center;
+    width: 50px;
+    height: 10px;
+    padding: 20px;
+    margin: auto;
+    border-bottom: 5PX solid rgb(14, 101, 14);
+}
+
+a {
+    text-decoration: none;  
+    color: white;
+    text-transform:capitalize;
+}
+6_____________inherit
+
+
+
+div {
+    border: 3px solid salmon;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    padding:20px  ;
+    margin: auto;
+}
+div p {
+    background-color: #ddd;
+    border: inherit;
+    padding: inherit;
+
+}
+.dp2 { specific border color and margin from the top
+    border-color: green;
+    margin-top: 30px;
+}
+*/
+
+/* __________________________24->  Float And Clear  _____________________________*/
+
+
+
+
+/* .parent { /* 2--- add overflow:hidden
+    background-color: salmon;
+    padding: 10px;
+    overflow: hidden;
+
+
+}
+.parent div { /* 1--- add float 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #ddd;
+    width: 25%; /*<-- take the the whole space of the parent '4div->25%'  
+    float: left; /*<-- aligned left to right  */ /* 1--- add float 
+}
+.clear {/* 3--- add a paragraph in the last of(parent) with class clear 
+    
+    clear: both;
+
+} 
+/* __________________________25->   Mastering The CSS Calculation  _____________________________*/
+
+/*
+calc is wanderful
+
+ -- distributing spaces % 
+
+ Content width is: 100% 
+ 5 spaces: 1% * 5 = 5% from content width
+ 95% availble space 
+ 4 Elements -> the width needs 95% /4 = 23.75%;
+
+ div { 
+     padding-top:10px;
+     padding-bottom:10px;
+     background-color: #ddd;
+     text-align: center;
+     float: left; 
+     width: 23.75%; => or  width: calc( 95%/4 )
+     margin-left: 1%;
+ }
+
+  -- distributing spaces px
+
+ Content width is: 100%
+ 5 spaces: 10px * 5 = 50px from content width
+ 100%-50px availble space 
+ 4 Elements -> the width needs (100%-50px) /4
+ */
+
+ /* __________________________26->  Opacity  _____________________________*/
+ 
+/*
+useful in opacity of window to focus 
+ .one {
+     background-color: red;
+     opacity: 0.5;
+ }
+ .two {
+    background-color: rgb(255 0 0 / 0.5);
+   
+ } */
+  /* __________________________27->  Position  _____________________________*/
+
+/* 
+position
+- Static => Default
+- Relative
+- Absolute
+- Fixed
+- Sticky
+*/
+
+    /* 1____________
+
+    position: static; <-- "nothing happend"
+    top: 10px;  */
+
+    /* 2____________
+
+    position: relative; "stil organised no element hide other element" 
+    top: 10px; "make 10px in the top of the element"
+    left: 10px; "make 10px in the left of the element" */
+
+    
+
+    /* 3____________
+
+    position: absolute <-- "moving based on his parent,the parent must has relative " 
+
+  .two {
+      background-color:red;
+      position: absolute; <--*
+      bottom: 0;
+    }
+  .parent{
+      background-color: blue;
+      width: 400px;
+      height: 200px;
+      position: relative; <--*
+    }
+    */
+    
+
+    /* 4____________
+
+        position: fixed; "still visible even when scrolling the page"
+    
+    .two {
+        background-color:red;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    } */
+
+    /* 5____________
+
+    "the sticky div still fixed when top=0 in scrolling"
+   
+   body {
+        min-height: 4000px;
+    }
+
+    div {
+        padding: 10px;
+        background-color: salmon;
+        color: antiquewhite;
+        position: sticky;  <--*
+        top: 0px;
+    } */
+
+    
+    /* __________________________27->  Z-index  _____________________________*/
+
+     /*  must having a position to work with    
+
+     div {
+         color: antiquewhite;
+         padding: 10px;
+         width: 100px;
+         position: absolute;
+     }
+     .one {
+         background-color: salmon;
+         margin-left: 10px;
+         margin-top: 10px;
+         z-index: 3;
+
+     }
+     .two {
+         background-color: red;
+         z-index: 2;
+         margin-left: 20px;
+         margin-top: 20px;
+     }
+     .three {
+         background-color: gray;
+         z-index:1 ;
+     }
+     */
+    /* __________________________28-> Lists Styling  _____________________________*/
+
+    /*
+    ul {
+        list-style-type: decimal;
+        list-style-position: inside;/* 'bullet'-> DEFAULT outside 
+        list-style-image: url(incon.com);
+
+        list-style: decimal inside url(incon.com);
+    }
+    
+    .list-unstyled {  
+
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    */
+    /* __________________________29-> Table Styling  _____________________________*/
+
+       /* 
+        table {
+            width: 500px;
+            border-spacing: 0px;
+        }
+        table td {
+            padding: 15px;
+            background-color: #EEE;
+            border: 1px solid #CCC;
+        }
+        table thead td {
+            background-color: rebeccapurple;
+            color: #EEE;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border-color:rgb(103, 103, 103)
+        } 
+
+        Execise __________________________________________
+
+        
+        
+
+    /*
+    2______________opacity and rgb
+       
+       div {
+            margin: 20px auto;
+            width: 300px;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 20px;
+            background-color: rgb(179 179 179); /* Get The Background From Image 
+            color: black;
+          }
+          .one {
+              background-color:rgb(179 179 179/0.1) ;
+          }
+          .two {
+              opacity:0.1 ;
+          }
+
+          1_______________Adjust a butiful view 
+
+          link of the view :https://elzero.org/css-assignments-lesson-from-27-to-29/
+
+    html code : <----*
+
+    <div class="parent">
+
+       <div class="full">Full width</div>
+       <div class="W3">
+           <div>1/3</div>
+           <div>1/3</div>
+           <div>1/3</div>
+       </div>
+       <div class="W2">
+           <div>1/2</div>
+           <div>1/2</div>
+       </div>
+       <div class="W4">
+           <div>1/4</div>
+           <div>1/4</div>
+           <div>1/4</div>
+           <div>1/4</div>
+       </div>
+    </div>
+
+   CSS Code:  <----*
+     
+        .parent {
+            
+            background-color: lightgray;
+            width: 800px;
+            float: left;
+        }
+        .parent .full,
+        .parent .W3 ,
+        .parent .W4 ,
+        .parent .W2 {
+
+            display: block;
+            
+        } 
+
+        .full,
+        .parent .W3 div,
+        .parent .W4 div,
+        .parent .W2 div {
+
+            display: inline-block;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: #eee;
+
+        }
+       
+        .parent .full {
+            
+            width: calc(100% - 30px);
+            
+        } 
+        
+        .parent .W3 div {
+            
+            width: calc((100% - 68px)/3);
+                      
+        }
+       
+        .parent .W2 div {
+                       
+            width: calc((100% - 49px)/2);      
+              
+        }
+       
+        .parent .W4 div {
+
+            width: calc((100% - 86px)/4);  
+            margin-bottom: 15px;
+ 
+        }
+        */
+        /* __________________________30-> Pseudo Classes  _____________________________*/
+
+        /* 
+        a:hover {
+            color: green;
+        }
+        .ch:visited + label { // if checkbox visited 'label ->red'
+            color: red  ;
+        }
+        a:visited {
+            color: rebeccapurple;
+        }
+        div:empty {
+            border: 2px solid salmon;
+        }
+        :empty { 
+            border: 2px solid salmon;
+        }
+        .in:focus { when focus on input
+            border: 2px solid lightgray;
+            outline: none;
+        } */
+        /* __________________________31-> Pseudo Elements - First Letter, First Line, Selection  _____________________________*/
+
+        /* 
+        .one span {
+            display: inline-block;
+            background-color: red;
+            font-weight:bold ;
+            font-size: 20px;
+        }
+        .two::first-letter {
+            display: inline-block;
+            background-color: red;
+            font-weight:bold ;
+            font-size: 20px
+        }
+        .three::first-line {
+            background-color: green;
+            color: white;
+        }
+        .four::selection {
+            background-color: black;
+            color: lightgoldenrodyellow;
+        } */
+        /* __________________________31-> Pseudo Elements - Before, After, Content ______________*/
+        /* 
+        --- html ---
+
+         <div class="parent">
+       <div class="user"> 0 </div>
+         <div class="user-def">
+           <p>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem praesentium doloribus quas incidunt, eligendi ex esse, nihil est odit non vel similique minus? Enim nisi ut ipsum repellat dolore.
+           </p>
+           <span class="decore"></span>
+         </div>
+        </div>
+
+        --- the code without pseudo element : css ---
+
+        .parent {
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .user {
+            background-color: #eee;
+            width: 50px;
+            font-size: 50px;
+            padding: 26px;
+            margin-right: 15px;
+            height: 55.5px;
+            text-align: center;
+            float: left;
+        }
+        .user-def {
+            position: relative;     
+            background-color: #eee;
+            width: 600px;
+            margin-left: 10px;
+            padding: 10px;
+            float: left;
+        }
+        .decore {               <------*
+            position: absolute;
+            right: -16px;
+            top: 0;
+            background-color: rgb(107 189 225);
+            width: 7PX;
+            height: 106.5px;
+        } 
+                --- the same code with pseudo element : css ---
+
+        
+        .user-def::after {
+
+            content: "";  /* <-- obliged to put it to appear after 
+            position: absolute;
+            right: -12px;
+            top: 0;
+            background-color: rgb(107 189 225);
+            width: 7PX;
+            height: 106.5px;
+        }
+
+
+                --- Making with pseudo element : une fléche <- css ---
+
+        .user-def::before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 52px;
+            height: 0px;
+            width: 0px;
+            border: 10px solid;
+            border-color: transparent lightseagreen transparent transparent;
+        }
+         */
+          /* __________________________32-> Pseudo Elements - Content And Trainings________________*/
+          
+        /* 
+                --- display attr defined in html  ---
+
+        
+        .user-def::before {
+            content: attr(data-text);   <-* display attr defined in html 
+            display: none;  
+        }
+        .user-def:hover::before {    <-* when hover display what is before 
+            display: block;
+        } 
+
+                        --- Make a counter  ---
+
+        /* 
+        .user-def::after { <- make a counter
+            content:counter(counter);/* defined in parent like 'counter-increament:counter'
+            position: absolute;
+            right: 0;
+            padding: 3px;
+            background-color: red;
+            color: aliceblue;
+
+        } 
+                --- Make a flech before li  ---
+        ul {
+            list-style: none;
+        }
+        ul li {
+            position: relative;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            margin-top: -10px;
+            height: 0px;
+            width: 0px;
+            border: 10px solid;
+            border-color: transparent transparent transparent lightseagreen;
+        }
+        */
+        /* __________________________33-> Vendor Prefixes________________*/
+        /* informations aboute featrures if they can supported by browsers */
+
+        /* __________________________34-> Border Radius ________________*/
+        /* 
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+
+            /* border-radius: 10px; or: border-radius: 10px 10px 10px 10px  
+
+        } 
+        /* __________________________35->  Box Shadow And Examples ________________*/
+
+       /* Syntax : H-shadow | V-shadow | Blur | Spread| Color | Inset  
+
+        div {
+            padding: 20px;
+            background-color: #eee;
+            margin: 20px auto;
+            width: 300px;
+            box-shadow: 2px 2px 2px 0 #ddd inset;
+
+        }"can make mutiple shadow with','"
+
+        /* __________________________36->  The Box Model And Box Sizing ________________*/
+
+        /*
+        
+        * { "generally used block"
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; /* the width content does not add 'border' in it  
+        }
+        .parent {
+            width: 600px;
+            overflow: hidden;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        .one { 
+            background-color: #eee;
+            width: 300px;
+            float: left;
+            border: 10PX solid salmon;
+            -webkit-box-sizing: border-box;  <-- if '*' doesn't exist 
+
+        }
+
+        Exercise ______________________________________________________________________
+        
+        1__________________ simple centered divs
+
+        div {
+            margin: 20px auto;
+            padding: 10px;
+            width: 300px;
+            height: 60px;
+            background-color: #eee;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .two {
+            background-color: red;
+        }
+        2__________________ div as note
+        
+        div {
+            background-color: #eee;
+            padding: 20px;
+            width: 300px;
+            text-transform: capitalize;
+            margin-left: 15px;
+            position: relative;
+        }
+        span {
+            position: absolute;
+            left: -10px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 5px 0px;
+            height: 50%;
+            top: 10px;
+        }
+        3__________________ div as note very beautiful
+        
+        p {
+            background-color: #eee;
+            padding: 15px 10px;
+            width: 500px; 
+            position: relative;
+            left: 100px;
+        }
+        p::before { 
+            content: attr(data-person);
+            position: absolute;
+            top: 5px;
+            left: -90px;
+            background-color: #eee;
+            padding: 10px 10px;
+            width: 50px;
+            height:30%;
+            text-align: center;
+        }
+        p .flech { <- it's a span
+
+            content: "";
+            background-color: transparent;
+            position: absolute;
+            left: -26px;
+            top: 50%;
+            margin-top: -10px;
+            height: 0px;
+            width: 0px;
+            border: 10px solid;
+            border-color: transparent red transparent transparent;
+        }
+        p .bar { <- it's a span
+
+            position: absolute;
+            left: -7px;
+            top: 0;
+            background-color: red;
+            width: 7PX;
+            height: 48.5px;   
+        }
+        4__________________ div as list of note very beautiful
+
+        
+        p {
+            background-color: #eee;
+            padding: 15px 10px;
+            width: 500px; 
+            position: relative;
+            left: 50px;
+            counter-increment: count;
+        }
+        p::before {
+            content: counter(count);
+            text-align: center; 
+            position: absolute;
+            top: 0;
+            left: -35px;
+            background-color: red;
+            color: white;
+            padding: 15px 10px;
+            height: 18.5px;
+            width: 18.5px;
+        }
+        p::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: red;
+            height:100%;
+            width: 4px;
+        }
+
+        5__________________ Three manificos shape like a card
+
+        html:
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+        css:
+
+        * { 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;   
+        }
+
+        div {
+            counter-increment: count;
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 200px; 
+            background-color: #eee;
+            margin: 50px 30px;  
+            border: 4px solid black; 
+            border-radius: 100px;
+            box-shadow: 10px 10px 0px 0px rgb(0, 151, 243) ,
+                       -10px -10px 0px 0px rgb(255, 31, 103) ;
+        }
+        div::before { 
+ 
+            position: absolute;
+            right: 85px;
+            top: -17px;
+            content: counter(count);
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            border-radius: 19px;
+            font-size: 20px;
+        }
+        div::after {
+
+            content: "Element";
+            position: absolute;
+            right: 50px;
+            top: 75px;
+            font-size: 30px;
+            font-family: sans-serif;
+            background-color: transparent;
+        }
+        6__________________ A shape with shadow inside like a card
+         div {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            margin:20px auto;
+            border-top-right-radius: 115px;
+            border-bottom-left-radius: 115px;
+            box-shadow:2px 2px 20px 0 #171717 inset;
+        }
+
+        7__________________ a card of choice to pay 
+
+        html:
+
+        <div class="parent">
+            <div class="free">
+                <a href="">Basic</a>
+            </div>
+            <div class="pro"> 
+                <a href="">pro</a>
+            </div>
+        </div>
+
+        CSS:
+        * { 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+        }
+        .parent {
+
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 10px auto;
+            box-shadow: 1px 1px 3px 0 rgb(103 103 103)
+        }
+        .parent::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 50%;
+            background-color: rgb(0, 169, 244);
+            width: 1px;
+            height: 270px;
+            margin-top: 15px;
+        }
+        .parent::after {
+
+            content: "Or";
+            position: absolute;
+            top: 45%;
+            right: 47.3%;
+            background-color:rgb(0, 169, 244);
+            color: white;
+            padding: 5px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        
+        .parent .free,
+        .parent .pro { /* the card choice 
+
+            float: left;/* for ordering main items in parent 
+            position: relative;
+            background-color: #eee;
+            height: calc(100% - 30px);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width:calc((100% / 2) - 60px);
+            margin-left: 30px;
+            margin-right: 30px; 
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold; 
+            text-transform: capitalize;
+        }
+
+        .parent .pro a,
+        .parent .free a { /* the click button 'basic or free' 
+
+            position: absolute;
+            bottom: 80%;
+            left: 7%;
+            text-decoration: none;
+            background-color:rgb(0, 169, 244);
+            color: white;
+            padding: 10px;
+            width: 85%;
+            border-radius: 5px; 
+        }
+        .parent .pro a::after,
+        .parent .free a::after {/* for making the content in big circle 
+
+            position: absolute;
+            bottom: -177px;
+            left: 3%;
+            color: black;
+            width: 50%;
+            height: 50%;
+            padding: 50px 36px 75px;
+            background-color: #ddd;
+            border-radius: 77px;
+            font-size: 30px;
+            font-weight: normal;
+        }
+        .parent .pro a::after { /* the content in the big circle 
+
+            content: "$30"; 
+        }
+        .parent .free a::after {
+
+            content: "Free"; 
+        }
+
+
+        ______________________________________________________________________________________________
+        */
+        /* __________________________37->  Transition ___________________________________*/
+        /* 
+        Transition
+          - Duration
+          - Property
+          - Delay
+          - Timing Function 
+        */
+       /*  * { 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+        }
+        .one { 
+            background-color: #eee;
+            width: 200px;
+            height: 100px;
+            /* 
+            transition-duration: 1s;
+            transition-property: width,height; <--* default:all
+            transition-delay: 0.2s;
+            transition-timing-function: ease; <--* default
+            /* 
+            transition: width 1s 0.5s linear ; 
+            */
+            /* 
+            transition: all 1s 0.2s ease;  
+        }
+        .one:hover {
+            width: 400px;
+            height: 150PX;
+        } 
+        */
+        /* __________________________38->  !Important Declaration And Use Cases ___________________*/
+
+        /* 
+        div { 
+
+            background-color: salmon !important; <--* 'to overide any styling'
+        } 
+        MAster devlopers dont use it as well.
+        */
+        /* __________________________39->  The Margin Collapse ___________________
+
+        [1] only vertical margin collapse 'atadakhoul fi margin' 
+        [2] Bigger margin wins
+        [3] the margin does not collapsing when separated by element like <hr>.
+        [4] Nesting does not prevent collapsing
+
+        
+
+        /* __________________________40->  css variables ___________________
+
+        CSS varriables:
+
+         - Globale variables
+         - Local variables 
+         var(variable name, Fallback value)
+
+         :root { <- means html document
+             --mainColor:blue;    <---*Globale variables
+             --mainPadding:20px;  <---*Globale variables
+         }
+         .main {
+             background-color: var(--mainColor,black);
+             color: white;
+             padding: var(--mainPadding);
+         }
+         h2 {
+            background-color: var(--mainColor,black);
+             color: green;
+             padding: var(--mainPadding); 
+         }
+         p {
+             background-color: var(--mainColor,black);
+             color: green;
+             padding: calc(10px + var(--mainPadding));
+             border: 3px solid green;
+         }
+         a:hover {
+             color: green;
+         }
+         .local {
+             --mainColor:black;     <--*Local variables 
+             background-color:var(--mainColor) ;
+             color: white;
+         }
+         
+
+       /* __________________________41-> Flex Box Parent - Direction, Wrap, Flow ___________________*/
+       
+       /* 
+       Flexible box
+       for parent
+
+       - display:flex => to make flexible box ( don't need overflow:hidden for parent and float:left 
+         for child )
+       - flex-direction: row =>'Default value' |or column
+       - flex-wrap: nowrap => Default value    [for orderingboxes,and overide the child box width]
+       - flex-flow: [flex-direction] + [flex-wrap]
+
+       
+
+       .flex {
+
+           display: flex; 
+           /* flex-direction: column-reverse; */
+
+           /*or
+           flex-direction: row-reverse;
+           flex-wrap: wrap;
+            */
+           /* flex-flow: row nowrap; <--* best way
+           width: 600px;
+           padding: 10px;
+           background-color: #eee;
+           text-align: center;
+        }
+       .flex div {
+
+           background-color: red;
+           color: aliceblue;
+           padding: 15px;
+           height: 80%;
+           width: calc(600px/5);    
+        }
+
+
+
+       /* __________________________42-> Flex Box Parent - Justify Content ___________________
+
+       Flexible box
+       for parent
+
+        - justify-content: flex-start =>'Default value'
+       
+
+    .flex {
+
+        display: flex; 
+        /* justify-content: flex-end;
+        justify-content: center; */
+        /*justify-content: space-between; <--* make space between elements dynamically
+                                                'just make an element child width' */
+        /*justify-content: space-around; <--* make space before and after elements dynamically
+                                               'just make an element child width' */ 
+                                               
+        /*justify-content: space-evenly; <--* [space-between;] + [space-around]   
+        width: 600px; 
+        padding: 10px;
+        background-color: #eee;
+        text-align: center; 
+    }
+    .flex div {
+
+        background-color: red;
+        color: aliceblue;
+        padding: 15px;
+        height: 80%;
+        width: calc(83%/ 3); /* just make an element child width  
+    }
+
+    /* __________________________43->Flex Box Parent - Align Items ___________________
+
+    Flexible box
+    for parent
+
+    align-items: stretch => Default value 'means element stretch to fit-content depending on his
+                                           parent' 
+     - align vertically 
+    
+    .flex {  
+
+           display: flex; 
+           width: 600px;
+           padding: 10px;
+           background-color: #eee;
+           text-align: center; 
+           /* align vertically:
+
+            align-items: stretch 
+            align-items: flex-end; 
+            align-items: flex-start;
+
+        }
+
+    .flex div {
+
+            background-color: red;
+            color: aliceblue;
+            padding: 15px;
+            height: 80%;
+            width: calc(85%/3);  
+    
+    }
+        
+    /* __________________________44->Flex Box Parent - Align content ___________________
+
+    Flexible box
+    for parent
+
+    align-content:stretch => Default value 'remember content contain items
+    and'align-content'adjust the all content'
+
+    
+    * {
+
+        box-sizing: border-box;
+    }
+
+    .flex {
+
+        background-color: #eee;
+        width: 600px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: flex-start;
+        /* align-content: flex-start; <-* "all content to the top"
+        /* align-content: space-between; <-* make space vertically "see the view"  
+     }
+     .flex div {
+
+        background-color: red;
+        color: aliceblue;
+        padding: 15px;
+        width: calc(100% / 3);
+    }
+    /* __________________________46->Flex Box Child - Grow, Shrink, Order___________________
+     
+    Flexible box
+    for child
+
+    flex-grow: 0 => Default
+    flex-shrink: 1=> Default
+    order: 0 => Default for ordering items by index
+
+
+   
+    .flex {
+
+        width: 900px;
+        background-color: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        display: flex;        
+    }
+    .flex div {
+
+        background-color: red;
+        color: white;
+        width: 80px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 5px;
+       /*  
+       flex-grow: 1; 1 fill all the parent space 'if one item in the list setup 3,it will take 3 of the others width if there is enouth spaces'*/
+       /*
+       flex-shrink: 1;the priority in minimizing width when set up in a specific child item     
+    } 
+    /* __________________________47->Flex Box Child - Flex Basis, Flex Shorthand___________________
+    Flexible box
+    for child
+    
+    flex-basis:auto; => Default-value.'items in parent take the width you specific'
+    flex: [flex-grow][flex-shrink][flex-basis] 0 1 auto
+
+    .flex {
+
+        width: 900px;
+        background-color: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        display: flex;        
+    }
+
+    .flex div {
+        background-color: red;
+        color: aliceblue;
+        padding: 15px;
+        /* flex-basis: 300px; */
+        /* 
+        flex:0 300px 'you can make it in specific item to not to grow and make others 300px'
+        flex:1 ’in a specific child item fill all the remaning space in parent'
+    }
+    .in {
+        display: inline-flex;/* this div will take position near the div before 'when there is spaces'  
+    }
+    /* __________________________48-> Flex Box Child - Align Self, Games, Task___________________
+    Flexible box
+    for child
+
+    Align-self:auto => Default-value
+    .flex {
+
+        width: 900px;
+        height: 300px;
+        background-color: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        display: flex;  
+    }   
+    .flex div {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        width: calc(100%/6);
+        /* margin-left: 0.5%;
+        margin-right: 0.5%; 
+        flex: 0 50px;
+        margin-right: 5px;
+    }
+    .flex .two {
+        align-self: flex-end; <--* adjust specifically the child item
+    }
+     /* __________________________[]->Over view of flex technique __________________
+     
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+  - flex-basis: auto => Default Value
+  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+  - align-self: auto => Default Value
+/* __________________________[]->Holy Grail Layout__________________
+html: 
+<body>
+
+<header class="header-flex">
+    Header-flex
+</header>
+
+<main class="main-flex">
+
+    <nav class="side-nav">
+        Side Nav
+    </nav>
+
+    <article class="articale-flex">
+        Articale Flex
+    </article>
+
+    <aside class="aside-flex">
+        Sidebar
+    </aside>
+</main>
+
+<Footer class="footer-flex">
+    Footer
+
+</Footer>    
+</body>
+
+* {
+    margin: 2px;
+} 
+body {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+}
+.header-flex {
+    background-color: lightseagreen;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.main-flex {
+    display: flex;
+    flex: 1 380px;
+    
+}
+.side-nav {
+    background-color: lightcoral;
+    padding-top:3rem ;
+    flex: 1 1 5rem;
+}
+.articale-flex {
+    background-color: lightgray;
+    padding-top: 3rem;
+    flex: 3 3;
+}
+.aside-flex {
+    background-color: lightcoral;
+    padding-bottom: 3rem;
+    flex: 1 1 5rem;
+}
+.footer-flex {
+    background-color: lightseagreen;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+@media all and (max-width:550px) {
+    .main-flex {
+        flex-direction: column;
+    }
+}
+Exercises______________________________________________________________________________
+
+1____________transition of two divs in one hover "one into the other" 
+.parent {
+    height: 300px;
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #eee;   
+    position: relative;
+    top: 80px;
+    transition-duration: 0.5s; <--*1 look how
+}
+.parent p {
+    padding: 10px 20px 20px;
+    text-transform: capitalize;
+}
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width: 400px;
+    margin-left: 50px;
+    background-color:#ddd;
+    position: absolute;
+    top: 50px;
+    transition: all 1s 0.5s ease ; <--*2 look how
+}
+.parent:hover {
+    top: 50px;
+}
+.child:hover {
+    top: 70px;
+}
+
+2____________change the div's content when hover on it 'hard'
+
+div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border: 1px solid blue;
+    font-size: 80px;
+}
+div:hover {
+    margin: 20px auto;
+    text-align: center;
+    color: black;
+    width: 400px;
+    background-color: #eee;
+}
+div span:hover {
+    display: none;
+}
+div:hover::after {
+    content:attr(data-text);  
+}
+
+3____________CSS variables
+
+:root {
+    --mainColor:#009688;
+    --mainPadding:10px;
+}
+div {
+    margin: 10px auto ;
+    padding:var(--mainPadding,10px);
+    color: var(--mainColor,red);
+    border: 2px solid var(--mainColor,black);
+}
+4____________Make a butiful circle card with flex
+.elzero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: rgb(255 87 47);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 7px 0 0 0 rgb(255 87 47),
+                -7px 0 0 0 rgb(0 169 244);
+    }
+
+5____________work with flex
+* {
+    box-sizing: border-box;
+ }
+ .parent {
+
+     width: 600px;
+     height: 300px;
+     padding: 10px;
+     background-color: #eee;
+     display: flex;
+     flex-flow:row wrap;
+     justify-content: space-around;
+     align-content: space-between;
+ }
+
+ .parent div {
+
+     background-color: red;
+     color: white;
+     text-align: center;
+     padding: 20px;
+     width: calc(90%/3);/* 90% in child is very important to make space around in justify content 
+     height: 20%;
+ }
+ 6____________align-self with row
+
+ .parent {
+
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+      
+}
+.parent div {
+
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: calc(100%/3);
+    flex: 0 150px;
+}
+.two {
+    align-self: flex-start;
+}
+.four {
+    align-self: flex-end;
+}
+
+6____________align-self with column
+
+
+ .parent {
+
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-flow: column nowrap ;
+      
+}
+.parent div {
+
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    height: 80px;    
+}
+.parent .one,
+.parent .three {
+    width: 10px;
+    align-self: flex-end;
+}
+.two {
+    width: 50%;
+}
+
+7___________________________beautifull golygrail
+
+html:
+    <div class="page">
+           <div class="header">
+             <div class="logo">Logo</div>
+             <ul class="links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+             </ul>
+           </div>
+           <div class="main-area">
+                <div class="content">Content</div>
+                <div class="sidebar">Sidebar</div>
+           </div>
+           <div class="footer">
+                <div class="copyright">Copyright 2021</div>
+                <div class="design">Designed By Elzero</div>
+           </div>
+    </div>
+CSS:
+ * {
+     box-sizing: border-box;
+     text-transform: capitalize;
+     font-family: sans-serif;
+ }
+ .page {
+     
+     height: 500px;
+     width: 1000px;
+     background-color: #eee;
+     display: flex;
+     flex-flow: column wrap;
+ }
+ .header {
+     display: flex;  
+     flex-flow: row nowrap;
+ }
+ .header .logo {
+     background-color: #ddd;
+     padding: 15px 20px;
+     margin: 15px 0 0 15px;
+     text-align: center;     
+ }
+ .header .links {
+     background-color: #ddd;
+     padding: 10px 15px;
+     margin: 15px 15px 0 15px;
+     flex: 1;  <--* beceuse it's a child 
+
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-end; <--* to pose links in the end
+ }
+ .header .links li {
+     list-style: none;
+     margin-left: 10px;
+ }
+ .main-area {
+     margin: 15px 15px 0 15px;
+     flex: 1; <--* make it larger in the column of page
+
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between; <--* diffrent from the header styling
+ }
+ .main-area .content {
+     background-color: #ddd;
+     flex-basis: 70%;
+     padding: 15px;
+      
+ }
+ .main-area .sidebar {
+     background-color: #ddd;
+     flex-basis: 30%;
+     padding: 15px;
+     margin-left: 15px;      
+}
+ .footer {
+    background-color: #ddd; <--* the container has a color
+    padding: 15px;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+}
+/* __________________________49-> Filters [ grayscale-blur-invert.... ]___________________
+
+* {
+     box-sizing: border-box;  
+} 
+ img {
+    transition: 0.3s;
+    filter: grayscale(100%);
+    filter: blur(4px);
+    filter: invert(100%);
+}
+img:hover {
+    filter: grayscale(0);
+    filter: blur(4px);
+    filter: invert(100%);
+}
+/* __________________________49-> Gradients___________________
+linear-gradient(Direction || Angle,color stop 1,color stop 2,...)
+
+div {
+    
+    /*  background-image: linear-gradient(to right, salmon,lightgray);
+        
+    or: background-image: linear-gradient( 180deg, salmon,lightgray);
+   
+   width: 800px;
+   height: 400px;
+   background-color: #eee;
+   padding: 10px;
+   position: relative;
+}
+
+div::before { <--* a beautifull border-top
+
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-image: linear-gradient(
+        to right,
+        #29809b 20%,
+        #27ae60 20%,
+        #27ae60 40%,
+        #d35400 40%,
+        #d35400 60%,
+        #8e44ad 60%,
+        #8e44ad 80%,
+        #c0392b 80%
+        );
+}
+/* __________________________50-> Pointer Events And Caret Color___________________
+
+    p {
+        caret-color: orange;
+    } 
+    a {
+        pointer-events: none; disable the click on the a tag
+    }
+
+
+
+/* __________________________51->  Grid - Parent - Template Columns___________________
+Grid
+parent
+- dispaly: grid | inline-grid
+- grid-template-columns = > [ Number of columns In ] =>[ px,%,auto,fraction, Repeat(),Mix ]
+
+* {
+    box-sizing: border-box;
+}
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+
+    display: grid;
+    /* grid-template-columns: 300px auto 25%; */
+    /* grid-template-columns: repeat(2,auto) repeat(2,2fr); */
+    /* grid-template-columns: repeat(4,auto); */
+    /* grid-template-columns: auto 25% repeat(2,1fr); 
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* __________________________52->  Grid - Parent - Template Rows And Gap___________________
+Grid
+parent
+
+- grid-template-rows = > [ Number of rows height In ] =>[ px,%,auto,fraction, Repeat(),Mix ]
+- gap: [Row Gap][Column Gap]
+
+
+* {
+    box-sizing: border-box;
+}
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+
+    /* grid-template-rows: 300px auto 25%; 
+    grid-template-rows: repeat(3,1fr);
+
+    /* row-gap: 10px;
+    column-gap:10px; 
+    gap: 10px 10px;
+
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* __________________________53->  Grid - Parent -Justify Content And Align Content___________________
+Grid
+parent
+ 
+* {
+    box-sizing: border-box;
+}
+.parent {
+
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+
+    justify-content: space-between ;<--* you can make it just with auto
+    align-content: space-between ;<--* you can make it just with auto
+
+
+}
+.parent div {
+
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+/* __________________________54->  Grid - Parent - Complete Layout With Template Areas___________________
+Grid
+parent
+
+html:
+<div class="page">
+       <h2>Elzero</h2>
+       <nav>
+           <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Home</li>
+           </ul>
+       </nav>
+       <section>Content</section>
+       <aside>Sidebar</aside>
+       <footer>footer</footer>
+</div>
+
+CSS:
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+ul li {
+    display: inline-block;
+}
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns:repeat(10,1fr) ;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+                         "cont cont cont cont cont cont cont cont side side"
+                         "foot foot foot foot foot foot foot foot foot foot";
+}
+h2 {
+    grid-area: logo;
+    background-color: salmon;
+    color: antiquewhite;
+}
+nav {
+    grid-area: nav;
+    background-color: lightgrey;
+    color: black;
+}
+section {
+    grid-area: cont;
+    background-color: lightseagreen;
+    color: black;
+}
+aside {
+    grid-area: side;
+    background-color: lightcoral;
+    color: wheat;
+}
+footer {
+    grid-area: foot;
+    background-color: black;
+    color: antiquewhite;
+}
+
+/* __________________________54->  Grid - Child - Grid Column And Grid Row___________________
+Grid
+Child
+
+.parent {
+    background-color: #eee;
+    width: 800px;
+    height: 500px;   
+    margin: 20px auto ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px 10px;
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.parent .one {
+
+    grid-column: 1 / 4; 
+    grid-column: span 3; <--*or
+
+    grid-row: 1/3;
+    grid-row: span 2; <--*or
+
+}
+/* __________________________55->  Grid - Child -Grid Area And Trainings___________________
+Grid
+Child
+
+grid-area: [Grid Row Start] [Grid column Start] [Grid Row end] [Grid column end]
+
+
+.parent {
+    background-color: #eee;
+    width: 800px;
+    height: 500px;   
+    margin: 20px auto ;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px 10px;
+    grid-template-areas:"head head head head head";  <--*
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.parent .nine {
+    background-color: green;
+    /* 
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 6;
+
+    grid-area: 2/2/3/6; <--* or
+    
+}
+.parent .one {
+    grid-area: head; <--*
+}
+
+/* __________________________56->  Grid Min, Max And Auto-Fill___________________
+
+auto-fill: to fill the screen depending of sizing
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.parent {
+    background-color: #eee;
+    height: 500px;   
+    margin: 20px auto ;
+    display: grid;
+    /*grid-template-columns: minmax(200px,400px) repeat(2,1fr); */
+    /*grid-template-columns: repeat(auto-fill,200px); <-- it remain an adding space */
+    /*grid-template-columns: repeat(auto-fill,minmax(200px,1fr));<--to fill the space 
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+Exercice 1: make a border___________________________________________
+
+div {
+    width: 600px;
+    height: 100px;
+    margin: 20px auto ;
+    background-color: #eee;
+    padding: 50px 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px; 
+    letter-spacing: 10px;
+    border-left: 10px solid orange ;
+    border-right: 10px solid rebeccapurple ;
+    position: relative;
+}
+div::before {
+    content: "";
+    height: 10px;
+    width: 660px;
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    background-image: linear-gradient(
+        to right,
+        orange 20%,
+        #27ae60 20%,
+        #27ae60 40%,
+        #d35400 40%,
+        #d35400 60%,
+        #c0392b 60%,
+        #c0392b 80%,
+        rebeccapurple 80%
+        );
+}
+div::after {
+    content: "";
+    height: 10px;
+    width: 660px;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    background-image: linear-gradient(
+        to right,
+        orange 20%,
+        #27ae60 20%,
+        #27ae60 40%,
+        #d35400 40%,
+        #d35400 60%,
+        #c0392b 60%,
+        #c0392b 80%,
+        rebeccapurple 80%
+        );
+}
+div::first-letter {
+    color: orange;
+    
+}
+Exercice 2: beatiful large input________________________________
+div {
+    margin: 20px auto;
+    width: 600px;
+    height: 50px;
+    position: relative;
+}
+#inp {
+    background-color: #eee;
+    width: 600px;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20Px;
+    caret-color: orange;
+    position: relative;
+}
+div::before {
+    content: "";
+    height: 3px;
+    width: 612px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    background-image: linear-gradient( to right, #27ae60 50%, #d35400 50% );
+}
+
+Exercice 3: make a card section with grid  ________________________________
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template: 15% 1fr / repeat(3,1fr);
+    gap: 20px 20px;
+  }
+  .grid div {
+      background-color: rgb(71, 125, 139);
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 25px;
+      position: relative;
+  }
+  .card-header {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+  }
+  .body-card {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+  }
+Exercice 4: make a layout with grid 'full-screen' ______________________________
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.layout {
+    height: 100vh; <--* full screen
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 5% auto 5%;
+    grid-template-areas:
+    "header header header header header header header header header header"
+    "section section section section section section section section aside aside"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+header {
+    grid-area: header;
+    background-color: lightseagreen;
+    position: relative;
+}
+header::before {
+    content: "header";
+    position: absolute;
+    top: 15Px;
+    left: 15px;
+    color: white;
+}
+section {
+    grid-area:section;
+    background-color: orange;
+    position: relative;
+}
+section::before {
+    content: "section";
+    position: absolute;
+    top: 15Px;
+    left: 15px;
+    color: white;
+}
+aside {
+    grid-area: aside;
+    background-color: darkgreen;
+    position: relative;
+}
+aside::before {
+    content: "aside";
+    position: absolute;
+    top: 15Px;
+    left: 15px;
+    color: white;
+}
+footer {
+    grid-area: footer;
+    background-color: darkmagenta;
+    position: relative;
+}
+footer::before {
+    content: "footer";
+    position: absolute;
+    top: 15Px;
+    left: 15px;
+    color: white;
+}
+
+Exercice 5: make a complicated shape with as grids______________________________
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template:   90% 1fr / 2% repeat(2,1fr) 2%;
+    /* grid-template-columns:2% repeat(2,1fr) 2% ;
+    grid-template-rows: 90% 1fr; 
+    gap: 20px 20px;
+    position: relative;
+  }
+.grid div {
+    background-color: darkolivegreen;
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+Exercice 6: make a very beautiful layout with grid ______________________________
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+     "head head head head head head head head head head"
+     "links links links links links links links logo logo logo"
+     "aside1 aside1 aside1 cont cont cont cont cont cont cont"
+     "aside2 aside2 aside2 cont cont cont cont cont cont cont"
+     "aside3 aside3 aside3 cont cont cont cont cont cont cont"
+     "footer footer footer footer footer footer footer footer footer footer";
+     gap: 20px 20px;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight {
+    background-color: rgb(0, 151, 241);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .eight {
+      grid-area: head;
+  }
+  .two {
+      grid-area: links;
+  }
+  .three {
+    grid-area: logo; 
+  }
+  .four {
+      grid-area: aside1;
+    }
+  .six {
+      grid-area: aside2;   
+    }
+  .seven {
+      grid-area: aside3;
+    } 
+  .five {
+      grid-area: cont;
+    }
+  .one {
+      grid-area: footer;
+    }
+
+Exercice 7: make a shape with grids and space between ______________________________
+    .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display:grid;
+        grid-template: repeat(2,5%)/repeat(2,1fr);
+        gap: 20px 20px;
+        align-content: space-between; <--*
+      }
+    .grid div {
+        background-color: lightcoral;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+Exercice 8: succes in the first challenge ______________________________
+html:
+ <div class="layout">
+        <div class="one">
+            <span class="tittle-dev">osama mohamed </span>
+            <span class="subtittle-dev">full-stack developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum molestias optio a nesciunt veniam totam, quas ullam tenetur eligendi nobis. Quod esse exercitationem porro nobis, consectetur culpa fugiat voluptatem.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magni laborum perspiciatis praesentium dicta quidem, autem aperiam eaque vitae distinctio dolore, ipsa, sequi inventore nisi quia consectetur ducimus animi doloribus quam sapiente illum est vero! Est similique nisi optio eos.
+            </p>
+        </div>
+        <div class="two">
+            <span class="tittle-dev">ahmed sayed </span>
+            <span class="subtittle-dev">IOS developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt quae quas rem numquam.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officia vero molestiae quam nemo temporibus eum, distinctio veritatis eius consequuntur.
+            </p>
+        </div>
+        <div class="three">
+            <span class="tittle-dev">Rebiai khadim Anis </span>
+            <span class="subtittle-dev">full-stack developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, nemo vel! Dignissimos, repellendus iste veritatis reiciendis ab qui laudantium alias ipsa porro ipsam esse excepturi quo autem, eos rem magnam.
+            </span>
+            <p class="definition-dev">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo corporis ex nostrum repellendus sed earum laudantium obcaecati quidem totam possimus delectus, dolore cumque nemo maxime qui laborum velit dignissimos labore molestias consequuntur reprehenderit amet ipsam quibusdam! Repudiandae enim necessitatibus perferendis optio recusandae id delectus aspernatur commodi, officia reprehenderit expedita corporis sed doloribus. Amet accusamus recusandae culpa natus in eveniet fuga tempora maxime sunt! Quidem officiis voluptatibus excepturi id at, commodi veritatis aliquam, nam minima ab itaque saepe quas libero inventore placeat illum unde? Cupiditate sint distinctio amet id voluptas facilis cum ipsum eius maxime quisquam ad, enim, aperiam possimus? Veritatis!
+            </p>
+        </div>
+        <div class="four">
+            <span class="tittle-dev">mohamed ibrahim </span>
+            <span class="subtittle-dev">.net developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, reiciendis?
+            </span>
+            <p class="definition-dev">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo possimus nisi sunt consequuntur rem repellat in dolores autem ipsa facere? Alias magnam voluptate ex est magni incidunt nesciunt ab earum atque quos ut culpa, quisquam nihil eaque. Accusantium quisquam totam eveniet praesentium, id quas facere laboriosam, labore, modi at maxime tempora ad suscipit molestiae animi placeat consectetur architecto commodi quaerat!
+            </p>
+        </div>
+        <div class="five">
+            <span class="tittle-dev">mahmoud mohamed </span>
+            <span class="subtittle-dev">full-stack developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum molestias optio a nesciunt veniam totam, quas ullam tenetur eligendi nobis. Quod esse exercitationem porro nobis, consectetur culpa fugiat voluptatem.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magni laborum perspiciatis praesentium dicta quidem, autem aperiam eaque vitae distinctio dolore, ipsa, sequi inventore nisi quia consectetur ducimus animi doloribus quam sapiente illum est vero! Est similique nisi optio eos.
+            </p>
+        </div>
+        <div class="six">
+            <span class="tittle-dev">alaa rebiai </span>
+            <span class="subtittle-dev">front-end developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum molestias optio a nesciunt veniam totam, quas ullam tenetur eligendi nobis. Quod esse exercitationem porro nobis, consectetur culpa fugiat voluptatem.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magni laborum perspiciatis praesentium dicta quidem, autem aperiam eaque vitae distinctio dolore, ipsa, sequi inventore nisi quia consectetur ducimus animi doloribus quam sapiente illum est vero! Est similique nisi optio eos.
+            </p>
+        </div>
+        <div class="seven">
+            <span class="tittle-dev">wassim rebiai </span>
+            <span class="subtittle-dev">back-end developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe libero.
+            </p>
+        </div>
+        <div class="eight">
+            <span class="tittle-dev">ayman hidjazi </span>
+            <span class="subtittle-dev">android developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe libero.
+            </p>
+        </div>
+        <div class="nine">
+            <span class="tittle-dev">walid sabri </span>
+            <span class="subtittle-dev">IOS developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe libero.
+            </p>
+        </div>
+        <div class="ten">
+            <span class="tittle-dev">mostafa basha </span>
+            <span class="subtittle-dev">IOS developer</span>
+            <span class="abstruct-dev">
+                Lorem ipsum dolor sit amet consectetur.
+            </span>
+            <p class="definition-dev">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe libero.
+            </p>
+        </div>
+    </div>
+
+    CSS:
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    :root {
+        --mainBackgound-Color:white; 
+        --maintittleColor:black;
+        --mainsubtittleColor:#bababa;
+        --mainabstructColor:black;    
+        --mainColor:black;
+    }
+    .layout {
+        padding: 70px;
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 400px 400px  400px  300px ;
+        grid-template-areas: 
+         "head head head-1 side-r"
+         "side-l cont-1 cont-1 side-r"
+         "side-l cont-2 cont-2 side-r"
+         "foot-1 foot-2 foot-3 foot-4"
+         ;
+        gap: 13px 13px;
+    }
+    /* grid styling 
+
+    .layout div {
+        background-color: var(--mainBackgound-Color);
+        position: relative;
+        padding: 25px;
+        display: grid;
+        grid-template-rows: 20px 20px auto 1fr;
+        grid-template-columns: auto;
+        row-gap: 5px;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .layout div::before {
+        content: ",,";
+        height: 3px;
+        color: #bababa;
+        position: absolute;
+        bottom: 85px;
+        right: 10px;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .layout div::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 61, 31);
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+    .layout div .tittle-dev {
+        font-weight: bold;
+        color: var(--maintittleColor);
+    }
+    .layout div .subtittle-dev {
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--mainsubtittleColor);
+    }
+    .layout div .abstruct-dev {
+        padding-top: 30px;
+        font-weight: bold;
+        color: var(--mainabstructColor);
+    }
+    .layout div .definition-dev {
+        padding-top: 10px;
+        color: var(--mainColor);
+        font-size: 17px;
+    }
+
+/* grid areas 
+    .one  {
+        grid-area: head;
+
+    }
+    .two  {
+        grid-area:head-1;
+
+    }
+    .three  {
+        grid-area: side-r;
+        --mainBackgound-Color:black; 
+        --maintittleColor:white;
+        --mainsubtittleColor:#bababa;
+        --mainabstructColor:white;
+        --mainColor:white
+        
+    }
+    .four  {
+        grid-area: side-l;
+        
+    }
+    .five  {
+        grid-area: cont-1;
+        --mainBackgound-Color:black; 
+        --maintittleColor:white;
+        --mainsubtittleColor:#bababa;
+        --mainabstructColor:white;
+        --mainColor:white;
+        
+    }
+    .six  {
+        grid-area: cont-2;
+        
+    }
+    .seven  {
+        grid-area: foot-1;
+        
+    }
+    .eight  {
+        grid-area: foot-2;
+        --mainBackgound-Color:black; 
+        --maintittleColor:white;
+        --mainsubtittleColor:#bababa;
+        --mainabstructColor:white;
+        --mainColor:white
+        
+    }
+    .nine  {
+        grid-area: foot-3;
+        
+    }
+    .ten  {
+        grid-area: foot-4;
+        
+    }
+
+    /* __________________________57->  2D Transform - Scale ___________________
+
+    2D Transform
+    - scaleX x-axis
+    - scaleY y-axis
+    - Scale both
+    
+    div {
+    transform: scaleX(2);/* width will dublicated 
+    transform: scaley(2);/* height will dublicated 
+    transform: scale(2,3); /* both x and y axis will sqweezed 
+    }
+    */
+    /* __________________________58->  2D Transform - Rotate ___________________
+    2D Transform
+
+    - Rotate
+    - deg => Degrees
+    - Rad => Radians
+    - grad => Gradians
+    - turn => Turn
+    
+    .image { <--* a div named image
+        overflow: hidden;
+        width: 700px;
+        height: 320px;
+    }
+    .image img {
+        transition: 0.3s;
+    }
+    .image:hover img {
+        transform: scale(1.2) rotate(5deg);
+        opacity: 0.6;
+    }
+    /* __________________________59->  2D Transform - Translate ___________________
+    2D Transform
+      - transform: translate(x,y) <--* best practice to move the elements.
+      - don't forget -webkit-transform.
+    
+    div {
+        transform: translate(100px,-100px);
+        transform: translate(50%,-50%);/* 50% from the div's width and height
+    }
+    /* __________________________60->  2D Transform - Skew ___________________
+    2D Transform
+    - skewX
+    - skewY
+    - skew(x,y)
+    
+    div {
+       transform: skewX(10deg); 
+       transform: skewY(10deg);
+       transform: skew(10deg,10deg);
+    }  
+
+    /* __________________________61->  2D Transform - Matrix ___________________
+    2D Transform
+    - Matrix
+    syntax => matrix( scaleX(), skewX(), skewY(), scaleY(), trabslateX(), trabslateY())
+
+    
+    .sahpe > div {
+        transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+    }
+
+    /* __________________________62->  2D Transform - Origin ___________________
+    syntax
+    default values => 50% 50% 0
+    2D Transform => transform-origin(X,Y)
+    3D Transform => transform-origin(X,Y,Z)
+
+    X-axis
+    - CSS-units[px, em, rem]
+    - %
+    - keyword
+    -- left = 0%
+    -- center = 50%
+    -- right = 100%
+
+    Y-axis
+    - CSS-units[px, em, rem]
+    - %
+    - keyword
+    -- top = 0%
+    -- center = 50%
+    -- bottom = 100%
+
+    div {
+        transform-origin: center top;or(50% 0)
+        transform: rotate(90deg);
+    }
+    /* __________________________63-> 3D Transform - Rotate ___________________
+
+    div {
+        transform:rotate3d(1,1,1,90deg) ;
+    }
+    
+    /* __________________________64-> 3D Transform - Translate, Perspective, Perspective Origin ___________________
+    3D Transform
+    - translate
+    - perspective
+    - perspective-Origin
+    
+    .parent {
+        perspective: 300px;
+        perspective-origin: center center;
+    }
+    .child {
+        transform: translate(0,0,100px); <--* will come to you
+    }
+
+    /* __________________________65-> 3D Transform - Backface Visibility And Flip Product ___________________
+    
+    3D Transform
+    - backface-visibility
+    - Transform-style
+    - Flip-product
+    HTML:
+    <div class="container">
+        <div class="box">
+            <div class="face front">Front</div>
+            <div class="face back">Back</div>
+        </div>
+   </div>
+    CSS:
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        margin: 20px auto;
+        width: 200px;
+        perspective: 600px;
+    }
+    .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+    }
+    .box:hover {
+        transform: rotateY(180deg);
+    }
+    .box .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 30px;
+        backface-visibility: hidden;
+    }
+    .box .front {
+        background-color: salmon;
+    }
+    .box .back {
+        background-color: lightseagreen;
+        transform: rotateY(180deg);
+    }
+
+    Exercise 1: Make a sticker ______________________________________
+    div {
+        width: 300px;
+        height: 200px;
+        margin: 40px auto;
+        background-color: #eee;
+        color: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: bold;
+        position: relative; 
+    }
+    div::before {
+        content: "";
+        width: 300px;
+        height: 200px;
+        background-color: lightseagreen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: rotate(-5deg);
+    }
+    div::after {
+        content: "";
+        width: 300px;
+        height: 200px;
+        background-color: lightcoral;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        transform: rotate(5deg);
+    }
+
+    Exercise 2: Make a load shape by hover ______________________________________
+     
+    div {
+        height: 200px;
+        width: 200px;
+        margin: 20px auto ;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    div::before {
+        content: "";
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        border-radius: 50%;
+        border: 10px solid lightseagreen;
+        border-left-color: transparent;
+        transition-duration: 0.5s;   
+    }
+    div:hover::before {
+        transform: rotate(180deg); 
+    }
+    div::after {
+        content: "";
+        height: 220px;
+        width: 220px;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        border-radius: 50%;
+        border: 10px solid lightcoral;
+        border-right-color: transparent;
+        transition-duration: 0.5s;
+        transition-delay: 0.3s;
+    }
+    div:hover::after {
+        transform: rotate(180deg);        
+    }
+    Exercise 3: Make an h1 with decoration 1 ______________________________________
+    
+    h1 {
+        width: 150px;
+        margin: 20px auto;
+        background-color: lightsalmon;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+    h1::before,
+    h1::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: lightsalmon;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; 
+    }
+    h1::before {
+        transform: skew(10deg,10deg);
+    }
+    h1::after {
+        transform: skew(-10deg,-10deg);
+    }
+    Exercise 4: Make an h1 with decoration 2 ______________________________________
+    
+    h1 {
+        width: 150px;
+        margin: 20px auto;
+        background-color: lightseagreen;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+    h1::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        background-color: lightseagreen;
+        z-index: -1;
+        transform: skewX(15deg);
+    }
+    h1::after {
+        content: "";
+        height: 100%;
+        width: 10%;
+        position: absolute;
+        top: 0;
+        left: -30px;
+        background-color: lightseagreen;
+        z-index: -1;
+        transform: skewX(15deg);
+
+        matrix( 0, skewX(15deg), 0, 0, 0, 0)
+  
+    }
+
+    Exercise 5: make a mail shape______________________________________
+    div {
+        height: 300px;
+        width: 300px;
+        background-color: darkcyan;
+        color: white;
+        margin: 300px auto;
+        border-bottom: 5px solid black;
+        position: relative;
+    }
+    div::before {
+        content: "";
+        height: 70%;
+        width: 70%;
+        position: absolute;
+        top: -35%;
+        left: 13%;
+        background-color: black;
+        border: 5px solid white;
+        transform: rotate(45deg);
+    }
+    div::after {
+        content: "Elzero";
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        color: white;
+        display: flex;
+    }
+    Exercise 6: make a flip div______________________________________
+
+    
+    div {
+        height: 300px;
+        width: 300px;
+        background-color: lightseagreen;
+        margin: 20px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 60px;
+
+        transform-style: preserve-3d;
+        transition: transform 1s;
+
+    }
+    div::before {
+        content: "Front";
+        color: white;
+    }
+    div:hover {
+        transform: rotateX(180deg);
+    }
+    div::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: salmon;
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 60px;
+
+        transform: rotateX(180deg);
+        backface-visibility: hidden;
+    }
+    div::after {
+        content: "Back";
+        color: white;
+    }
+    */
+
+    /* __________________________66->Animation - KeyFrames, Name, Duration___________________
+    
+    .animation {
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;
+        background-color: coral;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 5px;
+
+
+        animation-name: change-color;
+        animation-duration: 1s;
+    }
+    @keyframes change-color {
+        0%{
+            background-color: coral;
+        }
+        50%{
+            background-color: lightseagreen;
+        }
+        100%{
+            background-color: lightcoral;
+        }
+    }
+    /* __________________________67->Animation - Iteration Count, Timing Function, Spinner Loading ___________________
+    
+    .animation {
+
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;
+        background-color: #ddd;
+        border-radius: 50%;
+        border:  10px solid darkmagenta ;
+        border-left-color:transparent ;
+
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* __________________________68->Animation - Direction, Fill Mode, Play State, Delay ___________________
+
+    
+    .animation {
+
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;
+        background-color: #ddd;
+        
+        /*
+        animation-name: coloring;
+        animation-duration: 3s;
+        animation-iteration-count: 1;  
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse; /* or alternate or reverse 
+        animation-delay: 2s; 
+        animation-fill-mode: both; /* take the last style of the keyframes
+        animation-play-state: running;
+        
+        shorthand:
+        animation: coloring 3s linear 1s infinite running;
+        
+    }
+    div:hover {
+        animation-play-state: paused;
+    }
+    @keyframes coloring {
+        0% {
+            background-color: lightseagreen;
+        }
+        50% {
+            background-color: crimson;
+        }
+        100% {
+            background-color: seagreen;
+        }
+    }
+    /* __________________________69-> Up And Down Loading Animation Training ___________________
+    
+    HTML;
+    <div class="loading">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    CSS:
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body {
+        font-family: sans-serif;
+        background-color: #333;
+    }
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+    .loading div {
+
+        width: 20px;
+        height: 20px;
+        background-color: orchid;
+        margin-left: 10px;
+        border-radius: 50%;
+        animation-name: up-down;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+    .loading .two {
+        animation-delay: 0.3s;
+    }
+    .loading .three {
+        animation-delay: 0.6s;
+    }
+    @keyframes up-down {
+        
+        to {
+            opacity: 0.2;
+            transform: translateY(-20px);
+        }
+    }
+    /* __________________________70-> CSS Selectors Reference Part 1 ___________________
+
+    CSS SELECTORS:
+
+    - *
+    - div
+    - div p
+    - .class-name
+    - #id-name
+    - .parent .child
+    - .class-one.class-two
+    - .class-one p, .class-two p
+    - Element.class-name
+    - .parent > .child => direct child
+
+    /* __________________________71-> CSS Selectors Reference Part 2 ___________________
+
+    - Element + Other Element => [div + p]
+    - Element ~ Other Element => [div ~ p]
+    - [Attribute]
+    - Element[Attribute]
+    - [Attribute=Value]
+    - Element[Attribute=Value] => input[type="submit"]
+    - [Attribute~=Value] => Contains a word
+    - [Attribute*=Value] => Contains a String
+    - [Attribute^=Value] => start with String
+    /* __________________________72-> CSS Selectors Reference Part 3 ___________________
+
+    - :first-child => p:first-child "must be the 1st child for his parent"
+    - :last-child
+    - :first-of-type
+    - :last-of-type 
+    - :only-of-type
+    /* __________________________73-> CSS Selectors Reference Part 4 ___________________
+    - :not(selectors) => p:not(.special)
+    - :nth-child(n) => p:nth-child(2 or even or odd or n+6 ..)
+    - :nth-last-child(n)
+    - :nth-of-type(n)=> div:nth-of-type(2) "select the 2nd div"
+    - :nth-last-of-type(n)
+    /* __________________________74-> CSS Selectors Reference Part 5 ___________________
+    - :root
+    - :checked
+    - :empty
+    - :disabled
+    - :required
+    - :focus
+    - ::selection
+    - ::placeholder
+
+    input [type="checkbox"]:checked + label {
+        color: coral;
+    }
+
+    /* __________________________75-> Media Queries And Responsive Designs Intro ___________________
+
+    */
+
+
+    /*
+    Media Queries
+    Responsive design 
+     
+     * {
+        box-sizing: border-box;
+        margin: 0;
+     }
+     .parent {
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px auto;
+     }
+     .parent > div {
+        background-color: coral;
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+        width: 290px;
+     }
+     @media (min-width:1000px) and (max-width:1400px){
+        .parent > div {
+            background-color: lightseagreen;
+        }
+     }
+     
+    /* __________________________76-> Media Queries And Responsive Designs Standards ___________________
+   
+    Media Queries
+    Responsive design
+
+    - Concept of width
+    - Mobile
+    - Small Screens
+    - Medium
+    - Large Screens
+    - Future Updates
+
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+     }
+     .parent {
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px auto;
+     }
+     .parent > div {
+        background-color: coral;
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+        width: 290px;
+     }
+     /* Mobile 
+     @media (max-width:767px) {
+
+     }
+     /* Small screens 
+     @media (min-width:768px) and (max-width:991px) {
+        
+     }
+     /* Medium screens 
+     @media (min-width:992px){
+        
+     }
+     /* Large screens 
+     @media (min-width:1200px){
+   
+     }
+     /* Custom 
+     @media (min-width:1199px){
+   
+    }
+    /* __________________________77-> Media Queries And Responsive Designs Practice ___________________
+    
+    .parent {
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content: space-evenly;
+    }
+    .parent div {
+        padding: 20px;
+        background-color: coral;
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        flex-basis: 100%;  /* or width 
+        margin-bottom: 10px;  
+    }
+     @media (max-width:767px) {
+
+    }
+     @media (min-width:768px){
+        .parent div {
+            flex-basis: calc(50% - 60px);
+        }    
+    } 
+     @media (min-width:992px){
+        .parent div {
+            flex-basis: calc(25% - 60px);
+        }     
+    }
+    /* __________________________78-> Create Your Framework___________________
+    
+    *---- you have just to add the classes in html
+
+   .circle-100 {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   }
+   .flex-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    /* __________________________79-> CSS Global Values___________________
+    CSS Globale values
+    - inherit
+    - initial
+    - unset 
+    --- if inherit => inherit
+    --- if not => intial
+    - revert CSS level [4]
+    - all
+    Exercises 1: make a loading spin with 3 borders
+
+    div {
+
+    height: 250px;
+    width: 250px;
+    margin: 100px auto;
+    border-radius: 50%;
+    border: 10px solid crimson;
+    border-bottom-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: load 4s linear infinite running;
+   }
+   
+   /*-----1st case 
+   div:hover {
+    animation-play-state: paused;
+
+   }
+   /*-----2ND case 
+   div:hover,
+   div:hover::before,
+   div:hover::after {
+    animation-play-state: paused;
+   }  
+   
+   div::before {
+
+    content: "";
+    height: 110%;
+    width: 110%;
+    border-radius: 50%;
+    border: 10px solid darkorange;
+    border-bottom-color:transparent;
+    position: absolute;
+    animation: load 3s linear infinite running;
+
+   }
+   div::after {
+
+    content: "";
+    height: 120%;
+    width: 120%;
+    border-radius: 50%;
+    border: 10px solid darkblue;
+    border-bottom-color:transparent;
+    position: absolute;
+    animation: load 2s linear infinite running;
+   }
+   div:hover,
+   div:hover::before,
+   div:hover::after {
+    animation-play-state: paused;
+   }
+
+   @keyframes load {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+
+    }
+   }
+   Exercise : 2nd challeng EL animation __________________
+
+   HTML:
+   <div class="container">
+           <div class="E-letter">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div></div>
+           </div>
+           <div class="L-letter">
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div class="wight"></div>
+                <div></div>
+                <div></div>
+           </div>
+    </div>
+   
+CSS:
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container {
+    width: 650PX;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.E-letter,
+.L-letter {
+    height: 500px;
+    width: 300px;
+    margin: 50px auto;
+    display: grid;
+    grid-auto-rows: ;
+    grid-template-rows: 15% 1fr 15% 1fr 15% ;
+    grid-template-columns: 25% 1fr;
+    position: relative;
+}
+
+.E-letter div,
+.L-letter div {        
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;        
+}
+.L-letter::before {
+    position: absolute;
+    right:0px;
+    top: 422px;
+    content: "";
+    height: 60px;
+    width: 60px;
+    margin: 3%;
+    background-color: orange;
+    animation: L-animation linear  2s both  ;
+}
+.E-letter::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    height: 60px;
+    width: 60px;
+    margin: 3%;
+    background-color: orange;
+    animation: E-animation linear 2s 2s ;
+}   
+div .wight {
+    background-color: white;
+}
+
+@keyframes L-animation {
+
+    0% {
+        right:0px;
+        top: 422px;
+
+    }
+    50% {
+        right:223px;
+        top: 422px;
+    }
+    
+    60% {
+        right:223px;
+        top:0px; 
+    }
+    70% {
+        right:223px;
+        top:0px; 
+        opacity: 1;
+    }
+    100% {
+        right:223px;
+        top:0px; 
+        opacity: 0;
+        
+    }
+}
+@keyframes E-animation {
+
+    0%  {
+        right:0;
+        top: 0;
+    }
+    11% {
+       right:223px;
+       top: 0;
+    }
+    22% {
+       right:223px;
+       top:211px;
+    }
+    33% {
+       right:0px;
+       top: 211px; 
+    }
+    44% {
+       right:223px;
+       top: 211px; 
+    }
+    55% {
+        right:223px;
+        top: 422px;
+    }
+    66% {
+        right:0px;
+        top: 422px;
+    }
+    77% {
+        right:223px;
+        top: 422px;
+    }
+    88% {
+        right:223px;
+        top: 0;
+    }  
+}
+
+Exercise 2: Media queries -> a responsive design of products__________________________________________________
+
+
+.container {
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-evenly;
+}
+.product {
+    height: 8%;
+    padding: 5px;
+    flex-basis: 100%;/* <-- mobile first 
+    margin: 10px auto;
+    background-color:#EEE;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.product-title {
+    font-weight: bold;
+    font-size: 19px;
+}
+.product-content {
+    padding-top: 5px;
+}
+
+@media (max-width:767px) {
+    .product .product-title {
+        color: black;
+    }
+}
+@media (min-width:768px){
+    .product {
+        flex-basis: calc(50% - 30px);
+    }    
+    .product-title {
+        color: red;
+    }
+} 
+@media (min-width:992px){
+    .product {
+        flex-basis: calc(25% - 30px);
+    }
+    .product-title {
+        color: lightseagreen;
+    }     
+}
+Exercise 3: Media queries -> a responsive design of products-2________________________________
+
+Html:
+<div class="parent">
+    <div class="one">
+      <h3>Product One</h3>
+      <p>This Is Product</p>
+    </div>
+    <div>
+      <h3>Product two</h3>
+      <p>This Is Product</p>
+    </div>
+    <div>
+      <h3>Product three</h3>
+      <p>This Is Product</p>
+    </div>
+    <div class="two">
+      <h3>Product four</h3>
+      <p>This Is Product</p>
+    </div>
+  </div>
+
+  CSS:
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .parent {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 80px 80px 80px;
+    gap: 10px 20px;
+  }
+  .parent div {
+    margin-bottom: 10px;
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    width: 100%;
+  }
+  h3 {
+    margin: 10px;
+  }
+  p {
+    margin: -5px;
+  }
+  @media (max-width: 991px) {
+  
+  }
+  /*medium screens
+  @media (min-width: 992px) {
+    .parent {
+      grid-template-columns: 1fra repeat(3,auto);
+      grid-template-rows: 80px 80px;
+    }
+    .one {
+      grid-column: span 3;
+    }
+    h3 {
+      color: red;
+    }
+  }
+  /*large screens
+  @media (min-width: 1200px) {
+    .parent {
+      grid-template-columns: 1fra repeat(2,auto);
+      grid-template-rows: 80px 80px 80px;
+    }
+    .one, .two {
+      grid-column: span 2;
+    }
+    h3 {
+      color: #009688;
+    }
+  }
+  Exercise 4:
+
+  html:
+
+<div class="arrow top"> Elzero</div>
+<div class="arrow right"> Elzero</div>
+<div class="arrow bottom"> Elzero</div>
+<div class="arrow left">E lzero</div>
+
+CSS:
+
+  
+  * {
+    box-sizing: border-box;
+    font:bolder 20px sans-serif;
+  }
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+
+}
+.arrow {
+    padding: 20px;
+    background-color: #ddd;
+    position: relative;
+    width: 500px;
+}
+::after {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+}
+.top::after {
+    border-bottom-color: #ddd;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+}
+.right::after {
+    border-left-color: #ddd;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -40px;
+}
+.bottom::after {
+    border-top-color: #ddd;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+.left::after {
+    border-right-color: #ddd;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -40px;
+} 
+*/
+  
