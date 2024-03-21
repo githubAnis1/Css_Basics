@@ -59,3 +59,24 @@
     }
 
 /*__________________________4- CSS – Balanced Text With Text Wrap __________________________*/
+
+.el {
+    background-color: #aaa;
+    width: 400px;
+    text-wrap: balance;
+}
+
+/*__________________________5- CSS – Has() Pseudo Class __________________________*/
+
+/* .parent:has(a, span) {
+  border: 2px solid red;
+} */
+  .paren:has(a):has(span) {
+    border: 2px solid blue;
+  }
+  .row:has(:checked) {
+    border: 2px solid green;
+  }
+  .paren:has(+ form) {
+    background-color: #ddd;
+  }
