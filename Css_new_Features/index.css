@@ -1,0 +1,61 @@
+/*__________________________1- CSS Nesting Module Syntax For Nesting Selectors __________________________*/
+
+/* Normal */
+.parent {
+    color: red;
+  }
+  .parent .child {
+    color: grey;
+  }
+  .parent .child span {
+    color: green;
+  }
+  
+  /* With CSS Nesting Module */
+  .parent {
+    color: red;
+    .child {
+      color: grey;
+      & span {
+        color: green;
+      }
+      &:hover span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  /*__________________________2- CSS Useful Features - Border Block __________________________*/
+
+  .one {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    background-color: #eee;
+    writing-mode: vertical-lr;
+  }
+  .two {
+    /* border-block: 2px solid black; */
+    border-block-start: 2px solid black;
+    border-block-end: 2px solid black;
+    writing-mode: vertical-lr;
+  }
+
+  /*__________________________3- CSS Useful Features - Where Pseudo Class __________________________*/
+
+  /* Normal Way */
+    h1 a,
+    h1 span,
+    div a,
+    div span,
+    p a,
+    p span {
+      color: red;
+    }
+
+    /* With Where */
+    .parent2 :where(h1, div, p) :where(a, span) {
+      color: red;
+    }
+
+/*__________________________4- CSS – Balanced Text With Text Wrap __________________________*/
