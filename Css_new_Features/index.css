@@ -91,3 +91,24 @@
 :nth-child(2 of .box) {
     color: red;
   }
+
+/*__________________________7- CSS – Is Pseudo Class __________________________*/
+/* With Grouping */
+div a,
+div span,
+p a,
+p span,
+ul a,
+ul span {
+  color: red;
+}
+
+/* With Is */
+:is(div, p, ul) :is(a, span) {
+  color: red;
+}
+
+/* Other Example */
+:is(div, p, ul , article, section) :is(a, span, .test) {
+  color: red;
+}
