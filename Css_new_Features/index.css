@@ -112,3 +112,16 @@ ul span {
 :is(div, p, ul , article, section) :is(a, span, .test) {
   color: red;
 }
+/*__________________________8- CSS Decorating Text Line, Style And Color __________________________*/
+a {
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: green;
+  color: green;
+}
+span {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: black;
+  color: black;
+}
