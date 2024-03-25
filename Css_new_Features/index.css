@@ -125,3 +125,14 @@ span {
   text-decoration-color: black;
   color: black;
 }
+/*__________________________9- CSS currentColor Keyword __________________________*/
+
+.parent {
+  color: green;
+  border: 2px solid currentColor;
+  box-shadow: 2px 5px 10px currentColor;
+}
+.parent .child {
+  border: 2px dotted currentColor;
+  color: black;
+}
