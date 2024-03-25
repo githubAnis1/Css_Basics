@@ -136,3 +136,30 @@ span {
   border: 2px dotted currentColor;
   color: black;
 }
+
+/*__________________________10- CSS :Empty Pseudo Class __________________________*/
+
+.alert {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+
+p {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+
+:empty {
+  border: 1px solid red;
+}
+
+/*__________________________11- CSS Select All Text With User Select __________________________*/
+
+.cant-select {
+  user-select: none;
+}
+.all-select {
+  user-select: all;
+}
