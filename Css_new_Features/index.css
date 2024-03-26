@@ -206,3 +206,36 @@ p {
   outline: 2px solid crimson;
   outline-offset: 11px;
 }
+/*__________________________13- Scroll-Padding __________________________*/
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 62px; /*has padding top when scrolling*/
+}
+body {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 62px;
+}
+h3 a {
+  color: white;
+}
+.sec-1,
+.sec-2,
+.sec-3 {
+  height: 100vh;
+}
+.sec-2 {
+  background-color: #eee;
+}
