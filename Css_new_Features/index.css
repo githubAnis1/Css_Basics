@@ -89,8 +89,8 @@
 /*__________________________6- CSS Useful Features - Nth Child Of __________________________*/
 
 :nth-child(2 of .box) {
-    color: red;
-  }
+  color: red;
+}
 
 /*__________________________7- CSS – Is Pseudo Class __________________________*/
 /* With Grouping */
@@ -162,4 +162,47 @@ p {
 }
 .all-select {
   user-select: all;
+  border: 2px dotted coral;
+}
+/*__________________________12- Outline-Offset __________________________*/
+
+* {
+  box-sizing: border-box;
+}
+.box {
+  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid black;
+  outline: 2px solid green;
+  outline-offset: 1px;
+}
+.box::before {
+  position: absolute;
+  content: "";
+  background-color: #ddd;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid salmon;
+  outline: 2px solid rebeccapurple;
+  outline-offset: 6px;
+}
+.box::after {
+  position: absolute;
+  content: "";
+  background-color: #ddd;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid darkcyan;
+  outline: 2px solid crimson;
+  outline-offset: 11px;
 }
