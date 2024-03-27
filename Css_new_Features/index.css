@@ -239,3 +239,49 @@ h3 a {
 .sec-2 {
   background-color: #eee;
 }
+/*__________________________14- ::marker Pseudo Element __________________________*/
+
+/* ul {
+  list-style: none;
+} */
+/* ul li {
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+} */
+/* First Method */
+/* ul li::before {
+  content: "\2022";
+  color: red;
+  display: inline-flex;
+  margin-right: 10px;
+} */
+
+/* Second Method */
+/* ul li::before {
+  content: "";
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-right: 10px;
+} */
+
+/* Marker Method */
+ul li::marker {
+  color: red;
+  animation: zoomin 1s ease infinite;
+}
+
+@keyframes zoomin {
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
